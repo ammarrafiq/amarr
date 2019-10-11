@@ -1,0 +1,61 @@
+package project.masukan;
+import java.util.Scanner;
+
+public class ProjectMasukan {
+
+    public static void main(String[] args) {
+         int nilai;
+         String Harga;
+      
+        Scanner input = new Scanner(System.in);
+         
+          
+       
+        
+        System.out.println("        Selamat datang");
+        System.out.println("    Di program Kiloan sampah");
+        System.out.println("**********************************");
+        System.out.println("Ketentuan:");
+        System.out.println("* Mengisi identifikasi dengan benar");
+        System.out.println("* Kuota penjualan individu per hari MAX 5 KG");
+        
+        System.out.println("Silahkan isi data di bawah ini untuk memulai");
+        System.out.println("Nama :"); 
+         String Nama = input.nextLine();
+        System.out.println("NIM :");
+         String NIM = input.nextLine();
+        System.out.println("Berat sampah :");
+        nilai = input.nextInt();
+          // higung gradenya
+        if ( nilai >= 5) {
+           Harga = "50.000";
+        } else if ( nilai >= 4 ){
+            Harga = "40.000";
+        } else if ( nilai >= 3 ){
+            Harga = "30.000";
+        } else if ( nilai >= 2 ){
+            Harga = "20.000";
+        } else if ( nilai >= 1 ){
+            Harga = "10.000";
+        } else if ( nilai >= 0 ){
+            Harga = "0";
+        } else {
+           Harga = "tidak seusai";
+        }
+
+        // cetak hasilnya
+        System.out.println("harga: " +Harga);
+         
+        
+          
+    
+                
+                
+         
+                
+       
+        
+            
+        }
+       
+    }    
